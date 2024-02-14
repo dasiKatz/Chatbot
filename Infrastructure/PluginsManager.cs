@@ -3,6 +3,7 @@ using CountDown;
 using Counter;
 using CountTheWords;
 using DiceRoller;
+using AddToNumbers;
 using Echo;
 using ListPlugin;
 using CountWord;
@@ -49,6 +50,10 @@ namespace Infrastructure
             {
                 return new CountWordPlugin();
             }
+            else if (id == AddToNumbersPlugin._Id)
+            {
+                return new AddToNumbersPlugin();
+            }
             else
 
             {
@@ -64,7 +69,8 @@ namespace Infrastructure
             EchoPlugin._Id,
             ListPlugin.ListPlugin._Id,
             CountTheWordsPlugin._Id,
-            CountWordPlugin._Id
+            CountWordPlugin._Id,
+            AddToNumbersPlugin._Id
         };
     }
 }
